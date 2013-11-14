@@ -1,8 +1,9 @@
-//apply plugin: 'groovy'
+apply plugin: 'groovy'
 apply plugin: 'scala'
 
 repositories {
     mavenCentral()
+    mavenLocal()
 }
 
 dependencies {
@@ -16,8 +17,11 @@ dependencies {
 
     compile    'org.apache.cassandra:cassandra-all:1.2.4'
 
+    compile    'org.apache.thrift:libthrift:0.9.1'
+
 }
 
+/*
 buildscript {
     repositories {
         mavenLocal()
@@ -27,4 +31,5 @@ buildscript {
         classpath 'org.jruby:gradle-jruby-plugin:0.1'
     }
 }
-
+apply plugin: 'jruby'
+*/
