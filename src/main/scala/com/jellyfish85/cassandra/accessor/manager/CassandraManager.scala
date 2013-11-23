@@ -4,7 +4,7 @@ import org.apache.cassandra.thrift.Cassandra
 import org.apache.thrift.protocol.TBinaryProtocol
 import org.apache.thrift.protocol.TProtocol
 import org.apache.thrift.transport.{TTransportException, TFramedTransport, TSocket, TTransport}
-import org.apache.cassandra.exceptions.{InvalidRequestException, CassandraException}
+import org.apache.cassandra.exceptions.InvalidRequestException
 import org.apache.thrift.TException
 
 /**

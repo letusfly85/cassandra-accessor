@@ -2,6 +2,7 @@ package com.jellyfish85.cassandra.accessor
 
 import com.jellyfish85.cassandra.accessor.manager.CassandraManager
 import org.apache.cassandra.thrift.Cassandra
+import com.jellyfish85.cassandra.accessor.dao.SampleDao
 
 object Main {
 
@@ -15,6 +16,9 @@ object Main {
 
     println(client.describe_version())
     println(client.describe_keyspace("keyspace1"))
+
+    val dao: SampleDao = new SampleDao
+    dao.insert(client, "abc", "def", "aaz")
 
   }
 
