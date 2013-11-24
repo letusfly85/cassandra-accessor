@@ -38,6 +38,8 @@ class SampleDao {
 
     val parent: ColumnParent = new ColumnParent( COLUMN_FAMILY )
 
+
+
     client.insert(
       ByteBuffer.wrap(rowKey.getBytes()), parent, column, ConsistencyLevel.ONE)
   }
