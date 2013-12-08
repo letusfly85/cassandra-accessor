@@ -1,7 +1,5 @@
 package com.jellyfish85.cassandra.accessor.bean.query.generate.tool
 
-import scala.tools.scalap.scalax.rules.scalasig.ScalaSigPrinter._tf
-
 /**
  * == CodeInfoBean ==
  *
