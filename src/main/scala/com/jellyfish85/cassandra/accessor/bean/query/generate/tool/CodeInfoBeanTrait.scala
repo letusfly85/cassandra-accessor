@@ -40,7 +40,7 @@ trait CodeInfoBeanTrait {
   def setColumnAttributeList(list: List[ColumnAttribute]) {
 
     list.foreach {attr: ColumnAttribute =>
-      attr.columnAttributeMap = Map(attr.columnName -> List(attr.dataType, attr.dataLength))
+      attr.columnAttributeMap = Map(attr.columnName -> attr)
 
       this.columnAttributeList ::= attr
     }

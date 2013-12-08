@@ -12,6 +12,6 @@ class ColumnAttribute {
   var dataType:   String     = _
   var dataLength: BigDecimal = _
 
-  var columnAttributeMap: Map = _ //Map(this.columnName -> List(this.dataType, this.dataLength))
+  var columnAttributeMap: Map[String, ColumnAttribute] = _ //Map(this.columnName -> List(this.dataType, this.dataLength))
 
 }
